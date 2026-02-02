@@ -2,9 +2,13 @@ Project Kickoff Operator
 
 A deterministic planning operator for turning vague ideas into runnable, local-first projects — designed for Claude Code.
 
-This repository contains a single, opinionated Claude skill system prompt that behaves like a planning compiler. The skill definition lives in project-kickoff-operator.skill.md. The skill is both:
-	•	conversational when shaping ideas
-	•	deterministic and non-interactive when generating execution plans
+This repository contains a single, opinionated Claude skill system prompt that behaves like a planning compiler.
+
+The skill definition lives in [`project-kickoff-operator.skill.md`](./project-kickoff-operator.skill.md).
+
+The skill is both:
+- conversational when shaping ideas
+- deterministic and non-interactive when generating execution plans
 
 No application code. No MCP servers. No network access.
 Just a clean operator that turns intent into action.
@@ -45,20 +49,9 @@ Once the idea is complete, the operator switches modes automatically and produce
 
 ⸻
 
-Skill Design Principles
-	•	Skills-first: reasoning only, no MCP unless strictly required
-	•	Deterministic output: same input → same plan
-	•	Action over tracking: every plan leads to a runnable vertical slice
-	•	Local-first: no cloud dependency assumptions
-	•	Honest scope: explicit tradeoffs, no magical thinking
-
-Designed explicitly for Claude Code–style execution workflows.
-
-⸻
-
 How To Use (As a Claude Skill)
 	1.	Create a new Claude skill (or system prompt)
-	2.	Paste the contents of project-kickoff-operator.skill.md verbatim into Claude’s system prompt
+	2.	Paste the contents of [`project-kickoff-operator.skill.md`](./project-kickoff-operator.skill.md) verbatim into Claude’s system prompt
 	3.	Start chatting normally
 
 You do not need to reference files, schemas, or modes.
@@ -106,6 +99,16 @@ Who This Is For
 	•	Product-minded builders
 	•	Research engineers
 	•	Anyone who wants plans that actually run
+
+⸻
+Skill Design Principles
+	•	Skills-first: reasoning only, no MCP unless strictly required
+	•	Deterministic output: same input → same plan
+	•	Action over tracking: every plan leads to a runnable vertical slice
+	•	Local-first: no cloud dependency assumptions
+	•	Honest scope: explicit tradeoffs, no magical thinking
+
+Designed explicitly for Claude Code–style execution workflows.
 
 ⸻
 
