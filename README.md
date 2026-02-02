@@ -2,7 +2,7 @@ Project Kickoff Operator
 
 A deterministic planning operator for turning vague ideas into runnable, local-first projects — designed for Claude Code.
 
-This repository contains a single, opinionated Claude skill system prompt that behaves like a planning compiler. The skill definition lives in project-kickoff-operator.skill.md.
+This repository contains a single, opinionated Claude skill system prompt that behaves like a planning compiler. The skill definition lives in project-kickoff-operator.skill.md. The skill is both:
 	•	conversational when shaping ideas
 	•	deterministic and non-interactive when generating execution plans
 
